@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Катерина](https://up.htmlacademy.ru/htmlcss/19/user/412989).
-* Наставник: [Денис Верхотуров] (https://htmlacademy.ru/profile/id56756).
+* Наставник: [Денис Верхотуров](https://htmlacademy.ru/profile/id56756).
 
 ---
 
