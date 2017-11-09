@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona hotels</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-           <img src="http://via.placeholder.com/149x73" width="149" height="73" alt="Логотип города Седона">
-          <!--Использовано изображение-заглушка, ресурс https://placeholder.com/, размеры приблизительные-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Sedona hotels</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+           <img src="img/sedona main logo.png" width="149" height="73" alt="Логотип города Седона">
+          <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="foto-video.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="foto-video.html">Фото и видео</a></li>
+        <li><a href="state-map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
     <section class="filters">
-        <h2 class="visually-hidden">Фильтры отелей</h2>
-        <!--Здесь будет форма-->
+      <h2 class="visually-hidden">Фильтры отелей</h2>
+      <!--TODO: Здесь будет форма-->
     </section>
     <section class="search-sorting">
-        <h2 class="visually-hidden">Количество и сортировка найденных отелей</h2>
-            <p>Найдено: 3</p> 
-            <!--не нравится это решение на строке 29 и 31, не могу придумать альтернативу-->
-            <p>Сортировка</p>
-                <ul>
-                    <li class="search-sorting-option-current">По цене</li>
-                    <li class="search-sorting-option">По типу</li>
-                    <li class="search-sorting-option">По рейтингу</li>
-                </ul>
+      <h2 class="visually-hidden">Количество и сортировка найденных отелей</h2>
+      <p>Найдено: 3</p>
+      <p>Сортировка</p>
+      <ul>
+        <li class="search-sorting-option-current"><a href="">По цене</a></li>
+        <li class="search-sorting-option"><a href="">По типу</a></li>
+        <li class="search-sorting-option"><a href="">По рейтингу</a></li>
+      </ul>
+      <a>По возрастанию</a>
+      <a href=". . .">По убыванию</a>
     </section>
     <section class="hotel-search-results">
-        <h2 class="visually-hidden">Результаты поиска отелей</h2>
-        <ul class="hotel-search-results-list">
-            <li class="hotel-item">
-                <h3 class="hotel-name">Amara Resort & Spa</h3>
-                    <span class="hotel-type">Гостиница</span>
-                    <span class="hotel-price">От 4000 Р.</span>
-                        <p>
-                            <img src="http://via.placeholder.com/136x93" width="136" height="93" alt="Гостиница Amara Resort & Spa">
-                        </p>
-                        <p>
-                            <a class="button button-details" href="">Подробнее</a>
-                        </p>
-                        <p>
-                            <a class="button button-book" href="">Забронировать</a>
-                        </p>
-                        <p class="hotel-rating-stars">
-                            <img src="http://via.placeholder.com/91x18" width="91" height="18" alt="Четыре звезды">
-                        </p>
-                        <p class="hotel-rating-points">Рейтинг: 8.5
-                        </p>
+      <h2 class="visually-hidden">Результаты поиска отелей</h2>
+      <ul class="hotel-search-results-list">
+        <li class="hotel-item">
+          <h3 class="hotel-name">Amara Resort & Spa</h3>
+          <p>
+            <img src="img/hotels_amaro resort&spa.jpg" width="136" height="93" alt="Гостиница Amara Resort & Spa">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <span class="hotel-type">Гостиница</span>
+          <span class="hotel-price">От 4000 Р.</span>
 
-            </li>
 
-            <li class="hotel-item">
-                <h3 class="hotel-name">Desert Quail Inn</h3>
-                    <span class="hotel-type">Мотель</span>
-                    <span class="hotel-price">От 3000 Р.</span>
-                        <p>
-                            <img src="http://via.placeholder.com/136x93" width="136" height="93" alt="Мотель Desert Quail Inn">
-                        </p>
-                        <p>
-                            <a class="button button-details" href="">Подробнее</a>
-                        </p>
-                        <p>
-                            <a class="button button-book" href="">Забронировать</a>
-                        </p>
-                        <p class="hotel-rating-stars">
-                            <img src="http://via.placeholder.com/65x18" width="65" height="18" alt="Три звезды">
-                        </p>
-                        <p class="hotel-rating-points">Рейтинг: 8.9
-                        </p>
+          <a class="button button-details" href="">Подробнее</a>
+          <a class="button button-book" href="">Забронировать</a>
 
-            </li>
+          <p class="hotel-rating-stars">
+            <img src="img/star.svg" width="91" height="18" alt="Четыре звезды">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <p class="hotel-rating-points">Рейтинг: 8.5
+          </p>
 
-            <li class="hotel-item">
-                <h3 class="hotel-name">Villas At Poco Diablo</h3>
-                    <span class="hotel-type">Апартаменты</span>
-                    <span class="hotel-price">От 2000 Р.</span>
-                        <p>
-                            <img src="http://via.placeholder.com/136x93" width="136" height="93" alt="Апартаменты Villas At Poco Diablo">
-                        </p>
-                        <p>
-                            <a class="button button-details" href="">Подробнее</a>
-                        </p>
-                        <p>
-                            <a class="button button-book" href="">Забронировать</a>
-                        </p>
-                        <p class="hotel-rating-stars">
-                            <img src="http://via.placeholder.com/43x18" width="43" height="18" alt="Две звезды">
-                        </p>
-                        <p class="hotel-rating-points">Рейтинг: 9.2
-                        </p>
-            </li>
-        </ul>
+        </li>
+
+        <li class="hotel-item">
+          <h3 class="hotel-name">Desert Quail Inn</h3>
+          <p>
+            <img src="img/hotels_desert quail inn.jpg" width="136" height="93" alt="Мотель Desert Quail Inn">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <span class="hotel-type">Мотель</span>
+          <span class="hotel-price">От 3000 Р.</span>
+
+          <a class="button button-details" href="">Подробнее</a>
+          <a class="button button-book" href="">Забронировать</a>
+
+          <p class="hotel-rating-stars">
+            <img src="img/star.svg" width="65" height="18" alt="Три звезды">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <p class="hotel-rating-points">Рейтинг: 8.9
+          </p>
+
+        </li>
+
+        <li class="hotel-item">
+          <h3 class="hotel-name">Villas At Poco Diablo</h3>
+          <p>
+            <img src="img/hotels_villas at poco diablo.jpg" width="136" height="93" alt="Апартаменты Villas At Poco Diablo">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <span class="hotel-type">Апартаменты</span>
+          <span class="hotel-price">От 2000 Р.</span>
+
+
+          <a class="button button-details" href="">Подробнее</a>
+          <a class="button button-book" href="">Забронировать</a>
+
+          <p class="hotel-rating-stars">
+            <img src="img/star.svg" width="43" height="18" alt="Две звезды">
+            <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+          </p>
+          <p class="hotel-rating-points">Рейтинг: 9.2
+          </p>
+        </li>
+      </ul>
     </section>
-    </main>
-    <footer class="main-footer">
-      <p class="footer-hashtag"> #visitsedona 
-      </p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-buttons" href="#">Twitter</a></li>
-          <li><a class="social-buttons" href="#">Facebook</a></li>
-          <li><a class="social-buttons" href="#">Youtube</a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-         <b>Website by</b>
-       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://via.placeholder.com/119x46" width="119" height="46" atl="htmlacademy.ru"></a>
-       <!--Использовано изображение-заглушка, ресурс https://placeholder.com/, размеры приблизительные-->
-      </p>
-    </footer>
-  </body>
+  </main>
+
+  <footer class="main-footer">
+    <p class="footer-hashtag"> #visitsedona
+    </p>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-buttons" href="#">Twitter</a></li>
+        <li><a class="social-buttons" href="#">Facebook</a></li>
+        <li><a class="social-buttons" href="#">Youtube</a></li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      <b>Website by</b>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru"></a>
+      <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+    </p>
+  </footer>
+</body>
+
 </html>
