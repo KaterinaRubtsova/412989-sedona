@@ -10,21 +10,29 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-          <img src="img/sedona main logo.png" width="149" height="73" alt="Логотип города Седона">
-          <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
-        </a>
+        <img src="img/sedona_main_logo.png" width="149" height="73" alt="Логотип города Седона">
+        <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+      </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="foto-video.html">Фото и видео</a></li>
-        <li><a href="state-map.html">Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+        <li>
+          <a href="info.html">Информация</a>
+        </li>
+        <li>
+          <a href="foto-video.html">Фото и видео</a>
+        </li>
+        <li>
+          <a href="state-map.html">Карта штата</a>
+        </li>
+        <li>
+          <a href="hotels.html">Гостиницы</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <div class="welcome-sedona">
-      <img src="img/index welcome to the gorgeous sedona_inscription.png" width="1200" height="510" alt="Welcome to the gorgeous Sedona!">
+      <img src="img/index_welcome_to_the_gorgeous_sedona_inscription.png" width="1200" height="510" alt="Welcome to the gorgeous Sedona!">
       <img src="http://via.placeholder.com/1200x510" width="1200" height="510" alt="Sedona background image">
       <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
     </div>
@@ -41,7 +49,7 @@
         <h3 class="feature-title">Настоящий городок</h3>
         <p class="feature-number">№ 1</p>
         <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        <img src="img/index Feature number 1 _ True city.jpg" width="800" height="260" alt="Настоящий городок Седона">
+        <img src="img/index_feature_number1_true_city.jpg" width="800" height="260" alt="Настоящий городок Седона">
         <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
       </article>
 
@@ -68,7 +76,7 @@
         <h3 class="feature-title">Там есть Мост Дьявола</h3>
         <p class="feature-number">№ 2</p>
         <p class="feature-description">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-        <img src="img/index Feature number 2_Devils bridge.jpg" width="800" height="260" alt="Настоящий городок Седона">
+        <img src="img/index_feature_number2_devils_bridge.jpg" width="800" height="260" alt="Настоящий городок Седона">
         <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
       </article>
 
@@ -97,11 +105,32 @@
     <section class="booking">
       <h2>Заинтересовались?</h2>
       <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!-- TODO: Здесь будет форма -->
     </section>
-    <section class="modal booking-modal-form">
+    <section class="booking-form">
       <h2>Поиск гостиницы в Седоне</h2>
-      <!-- TODO: Здесь будет форма -->
+      <form class="booking-box" method="get" action="https://echo.htmlacademy.ru">
+        <p class="booking-item">
+          <label for="checkin-date">Дата заезда</label>
+          <input type="text" name="date" id="checkin-date" value="" placeholder="24 апреля 2017">
+        </p>
+        <p class="booking-item">
+          <label for="checkout-date">Дата выезда</label>
+          <input type="text" name="date" id="checkout-date" value="" placeholder="4 июля 2017">
+        </p>
+        <p class="booking-item">
+          <label for="number-of-adults">Взрослые<span class="visually-hidden"> Выбрать количество взрослых </span></label>
+          <button class="button" type="button">+</button>
+          <input type="number" name="number" id="number-of-adults" value="2" min="1">
+          <button class="button" type="button">-</button>
+        </p>
+        <p class="booking-item">
+          <label for="number-of-children">Дети<span class="visually-hidden"> Выбрать количество детей </span></label>
+          <button class="button" type="button">+</button>
+          <input type="number" name="number" id="number-of-children" value="0" min="1">
+          <button class="button" type="button">-</button>
+        </p>
+        <button class="booking-button button" type="submit">Найти</button>
+      </form>
     </section>
     <section class="map">
       <img src="img/index map.jpg" width="1200" height="475" alt="Схема проезда">
@@ -112,14 +141,22 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-buttons" href="#">Twitter</a></li>
-        <li><a class="social-buttons" href="#">Facebook</a></li>
-        <li><a class="social-buttons" href="#">Youtube</a></li>
+        <li>
+          <a class="social-buttons" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="social-buttons" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="social-buttons" href="#">Youtube</a>
+        </li>
       </ul>
     </div>
     <p class="footer-copyright">
       <b>Website by</b>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru">
+      </a>
       <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
     </p>
   </footer>

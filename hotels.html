@@ -10,30 +10,86 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-           <img src="img/sedona main logo.png" width="149" height="73" alt="Логотип города Седона">
-          <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
-        </a>
+        <img src="img/sedona_main_logo.png" width="149" height="73" alt="Логотип города Седона">
+        <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
+      </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="foto-video.html">Фото и видео</a></li>
-        <li><a href="state-map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li>
+          <a href="info.html">Информация</a>
+        </li>
+        <li>
+          <a href="foto-video.html">Фото и видео</a>
+        </li>
+        <li>
+          <a href="state-map.html">Карта штата</a>
+        </li>
+        <li>
+          <a>Гостиницы</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="container">
     <section class="filters">
       <h2 class="visually-hidden">Фильтры отелей</h2>
-      <!--TODO: Здесь будет форма-->
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+              <label for="filter-swimming-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+              <label for="filter-apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р) </legend>
+          <input class="filter-input-range-min" type="text" value="0">
+          <input class="filter-input-range-max" type="text" value="3000">
+          <input class="filter-input-range" type="range" name="price" step="" value="">
+        </fieldset>
+        <button class="button filter-button" type="button">Показать</button>
+      </form>
     </section>
     <section class="search-sorting">
       <h2 class="visually-hidden">Количество и сортировка найденных отелей</h2>
       <p>Найдено: 3</p>
       <p>Сортировка</p>
       <ul>
-        <li class="search-sorting-option-current"><a href="">По цене</a></li>
-        <li class="search-sorting-option"><a href="">По типу</a></li>
-        <li class="search-sorting-option"><a href="">По рейтингу</a></li>
+        <li class="search-sorting-option-current">
+          <a href="">По цене</a>
+        </li>
+        <li class="search-sorting-option">
+          <a href="">По типу</a>
+        </li>
+        <li class="search-sorting-option">
+          <a href="">По рейтингу</a>
+        </li>
       </ul>
       <a>По возрастанию</a>
       <a href=". . .">По убыванию</a>
@@ -44,7 +100,7 @@
         <li class="hotel-item">
           <h3 class="hotel-name">Amara Resort & Spa</h3>
           <p>
-            <img src="img/hotels_amaro resort&spa.jpg" width="136" height="93" alt="Гостиница Amara Resort & Spa">
+            <img src="img/hotels_amaro_resort_and_spa.jpg" width="136" height="93" alt="Гостиница Amara Resort & Spa">
             <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
           </p>
           <span class="hotel-type">Гостиница</span>
@@ -66,7 +122,7 @@
         <li class="hotel-item">
           <h3 class="hotel-name">Desert Quail Inn</h3>
           <p>
-            <img src="img/hotels_desert quail inn.jpg" width="136" height="93" alt="Мотель Desert Quail Inn">
+            <img src="img/hotels_desert_quail_inn.jpg" width="136" height="93" alt="Мотель Desert Quail Inn">
             <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
           </p>
           <span class="hotel-type">Мотель</span>
@@ -87,7 +143,7 @@
         <li class="hotel-item">
           <h3 class="hotel-name">Villas At Poco Diablo</h3>
           <p>
-            <img src="img/hotels_villas at poco diablo.jpg" width="136" height="93" alt="Апартаменты Villas At Poco Diablo">
+            <img src="img/hotels_villas_at_poco_diablo.jpg" width="136" height="93" alt="Апартаменты Villas At Poco Diablo">
             <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
           </p>
           <span class="hotel-type">Апартаменты</span>
@@ -113,14 +169,22 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-buttons" href="#">Twitter</a></li>
-        <li><a class="social-buttons" href="#">Facebook</a></li>
-        <li><a class="social-buttons" href="#">Youtube</a></li>
+        <li>
+          <a class="social-buttons" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="social-buttons" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="social-buttons" href="#">Youtube</a>
+        </li>
       </ul>
     </div>
     <p class="footer-copyright">
       <b>Website by</b>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru">
+      </a>
       <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
     </p>
   </footer>
