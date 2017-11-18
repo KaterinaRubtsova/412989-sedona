@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Welcome to Sedona!</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,17 +35,16 @@
   <main class="container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <div class="welcome-sedona">
-      <img src="img/index_welcome_to_the_gorgeous_sedona_inscription.png" width="1200" height="510" alt="Welcome to the gorgeous Sedona!">
-      <img src="http://via.placeholder.com/1200x510" width="1200" height="510" alt="Sedona background image">
-      <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
     </div>
 
     <section class="introduction-sedona">
-      <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <h2 class="visually-hidden">Что вам стоит знать о Седоне</h2>
+      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
       <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
     </section>
 
     <section class="features">
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
 
       <article class="feature pictured-feature numbered-feature">
         <h2 class="visually-hidden">Первое преимущество</h2>
@@ -54,19 +56,22 @@
       </article>
 
       <article class="feature iconed-feature">
-        <img src="#" width="" height="">
+        <img src="img/icon-1.svg" width="75" height="72" alt="accomodation icon">
+        <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
         <h3 class="feature-title">Жилье</h3>
         <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </article>
 
       <article class="feature iconed-feature">
-        <img src="#" width="" height="">
+        <img src="img/icon-3.svg" width="76" height="73" alt="food icon">
+        <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
         <h3 class="feature-title">Еда</h3>
         <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </article>
 
       <article class="feature iconed-feature">
-        <img src="#" width="" height="">
+        <img src="img/icon-2.svg" width="71" height="80" alt="souvenirs icon">
+        <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
         <h3 class="feature-title">Сувениры</h3>
         <p class="feature-description">Не только китайского, но и местного производства!</p>
       </article>
@@ -107,55 +112,56 @@
       <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
     <section class="booking-form">
-      <h2>Поиск гостиницы в Седоне</h2>
+      <button class="button search-hotels-button" type="button">Поиск гостиницы в Седоне</button>
       <form class="booking-box" method="get" action="https://echo.htmlacademy.ru">
         <p class="booking-item">
           <label for="checkin-date">Дата заезда</label>
-          <input type="text" name="date" id="checkin-date" value="" placeholder="24 апреля 2017">
+          <input type="text" name="date" id="checkin-date" placeholder="24 апреля 2017">
         </p>
         <p class="booking-item">
           <label for="checkout-date">Дата выезда</label>
-          <input type="text" name="date" id="checkout-date" value="" placeholder="4 июля 2017">
+          <input type="text" name="date" id="checkout-date" placeholder="4 июля 2017">
         </p>
         <p class="booking-item">
           <label for="number-of-adults">Взрослые<span class="visually-hidden"> Выбрать количество взрослых </span></label>
-          <button class="button" type="button">+</button>
+          <button class="button button-plus" type="button">+</button>
           <input type="number" name="number" id="number-of-adults" value="2" min="1">
-          <button class="button" type="button">-</button>
+          <button class="button button-minus" type="button">-</button>
         </p>
         <p class="booking-item">
           <label for="number-of-children">Дети<span class="visually-hidden"> Выбрать количество детей </span></label>
-          <button class="button" type="button">+</button>
+          <button class="button button-plus" type="button">+</button>
           <input type="number" name="number" id="number-of-children" value="0" min="1">
-          <button class="button" type="button">-</button>
+          <button class="button button-minus" type="button">-</button>
         </p>
         <button class="booking-button button" type="submit">Найти</button>
       </form>
     </section>
     <section class="map">
-      <img src="img/index map.jpg" width="1200" height="475" alt="Схема проезда">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/index_map.jpg" width="1200" height="475" alt="Схема проезда">
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer-hotels">
     <p class="footer-hashtag"> #visitsedona
     </p>
     <div class="footer-social">
-      <ul>
+      <ul class="footer-social-icons">
         <li>
-          <a class="social-buttons" href="#">Twitter</a>
+          <a class="social-icon" href="#">Twitter</a>
         </li>
         <li>
-          <a class="social-buttons" href="#">Facebook</a>
+          <a class="social-icon" href="#">Facebook</a>
         </li>
         <li>
-          <a class="social-buttons" href="#">Youtube</a>
+          <a class="social-icon" href="#">Youtube</a>
         </li>
       </ul>
     </div>
     <p class="footer-copyright">
       <b>Website by</b>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="119" height="46" atl="htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" width="119" height="46" alt="htmlacademy.ru">
       </a>
       <!-- TODO: Заменить на данные актуальной картинки атрибуты src, width и height -->
     </p>
