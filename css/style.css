@@ -111,6 +111,7 @@ input[type="radio"].visually-hidden {
 }
 
 .introduction-sedona {
+  display: block;
   width: 100%;
   height: 216px;
   margin: 0;
@@ -118,8 +119,11 @@ input[type="radio"].visually-hidden {
 }
 
 .introduction-sedona h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -198,6 +202,10 @@ input[type="radio"].visually-hidden {
   left: 0;
 }
 
+.feature-iconed {
+  background-color: #ffffff;
+}
+
 .feature-iconed figcaption {
   font-size: 21px;
   line-height: 21px;
@@ -236,6 +244,10 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
 }
 
+.feature-unpictured-numbered {
+  background-color: #eeeeee;
+}
+
 .feature-unpictured-numbered figcaption {
   font-size: 21px;
   line-height: 21px;
@@ -255,6 +267,8 @@ input[type="radio"].visually-hidden {
 }
 
 .booking p {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -292,28 +306,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.booking-button {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.calendar-button {
-  width: 25px;
-  height: 25px;
-  color: #000000;
-  opacity: 0.3;
-}
-
-.calendar-button:hover {
-  color: #000000;
-  opacity: 1;
-}
-
-.calendar-button:active {
-  color: #81b3d2;
-}
-
 .search-hotels-button {
+  margin: 0;
+  padding: 0;
+  padding: 30px 140px;
   color: #ffffff;
   background-color: #766357;
 }
@@ -327,7 +323,101 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
+.booking-item {
+  color: #000000;
+  font-weight: bold;
+}
+
+.booking-item label {
+  margin: 0;
+}
+
+.booking-box {
+  position: absolute;
+  left: 50%;
+  width: 566px;
+  margin-left: -250px;
+  padding: 54px;
+  background-color: #ffffff;
+}
+
+.booking-box p {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.booking-box input[type="text"],
+.booking-box input[type="number"] {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  padding-right: 30px;
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.booking-box input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-box input:focus {
+  background-color: transparent;
+  border: 2px solid #ebebeb;
+}
+
+.calendar-button {
+  position: absolute;
+  background-image: url('../img/calendar.svg');
+  background-position: -5px 0px;
+  /*позиция задана неверно, чтобы можно было видеть календарь, иначе он прячется за инпутом*/
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.calendar-button:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.calendar-button:active {
+  color: #81b3d2;
+  outline: none;
+}
+
+.search-hotels-button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-hotels-button:hover {
+  background-color: #604e43;
+}
+
+.search-hotels-button:focus {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.booking-box .booking-button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
 .booking-box .booking-button:hover {
+  width: 100%;
   background-color: #669ec0;
 }
 
@@ -338,40 +428,20 @@ input[type="radio"].visually-hidden {
 
 .button-plus,
 .button-minus {
-  color: #ebebeb;
+  color: #000000;
+  opacity: 0.3;
   background-color: #f2f2f2;
 }
 
 .button-plus:hover,
 .button-minus:hover {
   color: #000000;
+  opacity: 1;
 }
 
 .button-plus:focus,
 .button-minus:focus {
   color: #81b3d2;
-}
-
-.booking-item {
-  color: #000000;
-  font-weight: bold;
-}
-
-.booking-box input {
-  font: inherit;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #f2f2f2;
-  border: none;
-}
-
-.booking-box input:hover {
-  background-color: #ebebeb;
-}
-
-.booking-box input:focus {
-  background-color: transparent;
-  border: 2px solid #ebebeb;
 }
 
 .map {
@@ -384,13 +454,17 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.main-footer.inner-page {
+  background-color: #ffffff;
+}
+
 .container-center {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 87.90%;
   margin: 0 auto;
-  padding: 0px 6%;
+  padding: 40px 6%;
 }
 
 .footer-hashtag {
@@ -530,24 +604,25 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox[type=checkbox]+label::before {
   content: "";
   position: absolute;
+  top: 0px;
+  left: -25px;
   width: 16px;
   height: 16px;
-  left: -25px;
-  top: 0;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox[type=checkbox]:checked+label::after {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 0;
+  top: 0px;
   left: -25px;
+  width: 16px;
+  height: 16px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -685,11 +760,14 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin: 0;
   padding: 0 6%;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .search-sorting ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -697,10 +775,6 @@ input[type="radio"].visually-hidden {
 
 .search-sorting li {
   margin-right: 30px;
-}
-
-.arrows {
-  align-self: flex-end;
 }
 
 .search-sorting span {
@@ -744,7 +818,9 @@ input[type="radio"].visually-hidden {
 
 .arrows {
   display: flex;
-  text-align: right;
+  justify-content: space-between;
+  width: 30px;
+  margin-left: 500px;
 }
 
 .arrow {
@@ -775,7 +851,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: row nowrap;
   padding: 20px 6%;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .hotels .hotel:first-child {
