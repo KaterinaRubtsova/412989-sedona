@@ -40,7 +40,8 @@
 
     <section class="introduction-sedona">
       <h2 class="visually-hidden">Что вам стоит знать о Седоне</h2>
-      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+      <h3>Седона - небольшой городок в Аризоне,
+        <br>заслуживающий большего!</h3>
       <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
     </section>
 
@@ -50,7 +51,8 @@
       <figure class="feature feature-pictured-numbered pictured-right">
         <figcaption>Настоящий городок</figcaption>
         <span>№ 1</span>
-        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <p>Седона - не аттракцион для туристов, там
+          <br>течет своя жизнь</p>
         <img src="img/index_feature_number1_true_city.jpg" width="800" height="260" alt="Настоящий городок Седона">
 
       </figure>
@@ -99,47 +101,59 @@
     </section>
 
     <section class="booking">
-      <h2>Заинтересовались?</h2>
-      <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="booking-wrapper">
+        <h2>Заинтересовались?</h2>
+        <p class="booking-info">Укажите предполагаемые даты поездки,
+          <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+      <button class="button search-hotels-button" type="button">Поиск гостиницы в Седоне</button>
+
     </section>
     <section class="booking-form">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <button class="button search-hotels-button" type="button">Поиск гостиницы в Седоне</button>
+
       <form class="booking-box" method="get" action="https://echo.htmlacademy.ru">
         <p class="booking-item">
           <label for="checkin-date">Дата заезда</label>
-          <input type="text" name="date" id="checkin-date" placeholder="24 апреля 2017">
+          <input type="text" name="date" id="checkin-date" value="" placeholder="24 апреля 2017">
           <button class="button calendar-button" type="button">
           </button>
         </p>
         <p class="booking-item">
           <label for="checkout-date">Дата выезда</label>
-          <input type="text" name="date" id="checkout-date" placeholder="4 июля 2017">
+          <input type="text" name="date" id="checkout-date" value="" placeholder="4 июля 2017">
           <button class="button calendar-button" type="button">
           </button>
         </p>
-        <p class="booking-item">
-          <label for="number-of-adults">Взрослые
-            <span class="visually-hidden"> Выбрать количество взрослых </span>
-          </label>
-          <button class="button button-plus" type="button">+</button>
-          <input type="number" name="number" id="number-of-adults" value="2" min="1">
-          <button class="button button-minus" type="button">-</button>
-        </p>
-        <p class="booking-item">
-          <label for="number-of-children">Дети
-            <span class="visually-hidden"> Выбрать количество детей </span>
-          </label>
-          <button class="button button-plus" type="button">+</button>
-          <input type="number" name="number" id="number-of-children" value="0" min="1">
-          <button class="button button-minus" type="button">-</button>
-        </p>
+        <div class="adults-child-wrapper">
+          <p class="booking-item">
+            <label for="number-of-adults">Взрослые
+              <span class="visually-hidden"> Выбрать количество взрослых </span>
+            </label>
+            <button class="button button-minus" type="button">-</button>
+            <input type="number" name="number" id="number-of-adults" value="2" min="1">
+            <button class="button button-plus" type="button">+</button>
+          </p>
+          <p class="booking-item">
+
+            <label for="number-of-children">Дети
+              <span class="visually-hidden"> Выбрать количество детей </span>
+            </label>
+            <button class="button button-minus" type="button">-</button>
+            <input type="number" name="number" id="number-of-children" value="0" min="0">
+            <button class="button button-plus" type="button">+</button>
+
+
+          </p>
+        </div>
         <button class="booking-button button" type="submit">Найти</button>
       </form>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <img src="img/index_map.jpg" width="1200" height="475" alt="Схема проезда">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18052164921!2d-111.83024376169357!3d34.85437335641882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1512229454533"
+        width="1200" height="592" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <img src="img/index_map.jpg" width="1200" height="592" alt="Схема проезда">
     </section>
   </main>
   <footer class="main-footer">
@@ -195,7 +209,7 @@
       </p>
     </div>
   </footer>
-
+  <script src="js/modal-popup.js"></script>
 </body>
 
 </html>
