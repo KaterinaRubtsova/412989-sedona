@@ -34,8 +34,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
-
 form.addEventListener("submit", function (evt) {
   if (!checkinDate.value || !checkoutDate.value || !adults.value) {
     evt.preventDefault();
