@@ -11,6 +11,7 @@ body {
   text-transform: uppercase;
   background-color: #eeeeee;
   box-shadow: 0 0 25px -5px rgba(0, 0, 0, .5);
+  position: relative;
 }
 
 a {
@@ -113,6 +114,8 @@ input[type="radio"].visually-hidden {
 }
 
 .introduction-sedona {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   margin: 0;
@@ -200,6 +203,7 @@ input[type="radio"].visually-hidden {
 .feature.feature-pictured-numbered p {
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -298,6 +302,7 @@ input[type="radio"].visually-hidden {
 
 .feature-unpictured-numbered p {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -307,6 +312,7 @@ input[type="radio"].visually-hidden {
 
 .feature-unpictured-numbered span {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   margin-bottom: 21px;
@@ -320,6 +326,8 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 574px;
   margin: 0 auto;
@@ -373,6 +381,8 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
   width: 568px;
@@ -550,6 +560,7 @@ input[type="radio"].visually-hidden {
 
 .booking-box .booking-button {
   display: inline-block;
+  vertical-align: middle;
   padding: 16px 198px 16px 194px;
   margin: 0 auto;
   font: inherit;
@@ -608,17 +619,17 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  position: relative;
-  bottom: 128px;
-  margin: 0 auto;
-  padding: 26px 6%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
   background-color: rgba(255, 255, 255, .9);
 }
 
 .footer-wrapper {
   display: flex;
-  width: 91%;
-  padding: 0 6%;
+  padding: 24px 0;
+  margin: 0 90px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
@@ -642,7 +653,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   list-style: none;
   margin: 0 auto;
-  padding: 0 15px;
+
 }
 
 .social-icon {
@@ -678,6 +689,7 @@ input[type="radio"].visually-hidden {
   width: 120px;
   height: 40px;
   color: #000000;
+  margin-left: 10px;
 }
 
 .html-logo:hover path {
@@ -724,7 +736,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -743,7 +755,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
   align-self: flex-start;
-  padding-left: 22px;
+  padding-left: 24px;
   margin-bottom: 24px;
 }
 
@@ -759,27 +771,19 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox[type=checkbox]+label::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -23px;
-  width: 24px;
+  left: -24px;
+  bottom: -2px;
+  width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 24px 24px;
+  background-size: 27px 23px;
 }
 
-.filter-input-checkbox[type=checkbox]:checked+label::after {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -22px;
-  width: 27px;
-  height: 27px;
+.filter-input-checkbox[type=checkbox]:checked+label::before {
   background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 23px 23px;
+
 }
 
 .filter-input-checkbox:disabled+label {
@@ -827,6 +831,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -942,6 +947,7 @@ input[type="radio"].visually-hidden {
 
 .search-sorting p {
   display: inline-block;
+  vertical-align: middle;
   padding: 0;
   margin: 0;
   margin-right: 45px;
@@ -1174,7 +1180,7 @@ input[type="radio"].visually-hidden {
 
 .inner-footer {
   position: static;
-  margin: 0 auto;
-  padding: 26px 6%;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
 }
