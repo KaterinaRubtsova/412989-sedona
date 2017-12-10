@@ -200,8 +200,8 @@ input[type="radio"].visually-hidden {
 }
 
 .feature {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 21.33%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 21.33%;
   flex: 0 0 21.33%;
   padding: 47px 6% 32px;
   margin: 0;
