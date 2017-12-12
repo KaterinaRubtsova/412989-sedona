@@ -15,6 +15,16 @@ body {
   position: relative;
 }
 
+
+/* глобальные стили - разрешенные исключения */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,6 +33,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* стили для главной страницы */
 
 .container {
   background-color: #ffffff;
@@ -171,6 +184,7 @@ input[type="radio"].visually-hidden {
   flex-flow: row wrap;
   width: 100%;
   height: 508px;
+  background-color: #669ec0;
   background-image: url("../img/index_bottom_plank_to_background_image.png"), url("../img/index_welcome_background.jpeg");
   background-repeat: no-repeat, no-repeat;
   background-position: 49% 100%, 0 29%;
@@ -434,7 +448,7 @@ input[type="radio"].visually-hidden {
 
 .search-hotels-button {
   display: block;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   padding: 33px 140px 28px 140px;
   font-size: 21px;
@@ -443,6 +457,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #766357;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .search-hotels-button:hover {
@@ -466,7 +481,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   z-index: 4;
   -webkit-box-shadow: 0 0 25px -5px rgba(0, 0, 0, .5);
-  box-shadow: 0 0 25px -5px rgba(0, 0, 0, .5)
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, .5);
 }
 
 .booking-box-hide {
@@ -578,8 +593,9 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item-date input {
-  width: 60%;
-  padding: 7px 50px 5px 15px;
+  width: 345px;
+  height: 38px;
+  padding: 0px 50px 0px 15px;
   margin: 0;
   font: inherit;
   text-transform: uppercase;
@@ -591,6 +607,8 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   background-color: #f2f2f2;
   border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .booking-item-date input::-webkit-input-placeholder {
@@ -618,15 +636,16 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar-button {
-  width: 20px;
-  height: 25px;
-  padding: 18px 19px;
+  width: 18px;
+  height: 23px;
+  padding: 17px 18px;
   background-color: #f2f2f2;
-  background-image: url("../img/calendar.svg");
+  background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
   background-size: 22px 25px;
   background-position: center;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 0;
 }
 
 .calendar-button:hover {
@@ -649,7 +668,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .booking-item-number {
@@ -676,8 +695,9 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item-number input {
-  width: 34px;
-  padding: 6px 0px 8px 14px;
+  width: 38px;
+  height: 38px;
+  padding: 0px 0px 0px 14px;
   margin: 0;
   font: inherit;
   font-size: 14px;
@@ -690,6 +710,8 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   border: none;
   outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .booking-box input:hover {
@@ -717,6 +739,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
+  border-radius: 0;
 }
 
 .booking-box .booking-button:hover {
@@ -731,14 +754,16 @@ input[type="radio"].visually-hidden {
 
 .button-plus,
 .button-minus {
-  width: 33px;
-  padding: 8px 1px 6px 2px;
+  width: 38px;
+  height: 38px;
+  padding: 0px 1px 0px 2px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
   outline: none;
+  border-radius: 0;
 }
 
 .button-minus {
@@ -960,6 +985,7 @@ input[type="radio"].visually-hidden {
 
 .navigation-menu-item-current {
   text-align: right;
+  margin-right: 6%;
 }
 
 .navigation-menu-item-current a {
@@ -1074,7 +1100,6 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -3px;
-  ;
   left: -40px;
   width: 23px;
   height: 23px;
@@ -1085,7 +1110,6 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -3px;
-  ;
   left: -40px;
   width: 26px;
   height: 23px;
@@ -1100,7 +1124,6 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -3px;
-  ;
   left: -40px;
   width: 26px;
   height: 23px;
@@ -1112,7 +1135,6 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -3px;
-  ;
   left: -40px;
   width: 26px;
   height: 23px;
@@ -1223,13 +1245,13 @@ input[type="radio"].visually-hidden {
 .range-button {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
+  width: 20px;
+  height: 20px;
+  background: #eeeeee;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.4);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.4);
   cursor: pointer;
 }
 
@@ -1279,35 +1301,35 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 66px;
+  width: 100%;
+  min-height: 66px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin: 0;
-  padding: 12px 6% 7px 6%;
+  padding: 30px 6% 29px 6%;
   border-bottom: 2px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .search-sorting ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: baseline;
+  -webkit-box-align: center;
   -ms-flex-align: baseline;
-  align-items: baseline;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .search-sorting li {
@@ -1425,7 +1447,6 @@ input[type="radio"].visually-hidden {
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   padding: 30px 6% 29px 6%;
-  ;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -1467,6 +1488,7 @@ input[type="radio"].visually-hidden {
 
 .hotel-info a {
   display: inline-block;
+  vertical-align: middle;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
